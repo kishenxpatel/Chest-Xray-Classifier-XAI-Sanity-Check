@@ -1,0 +1,37 @@
+# Python virtual environment files
+/lib/
+/include/
+/etc/
+/share/
+/pyvenv.cfg
+
+# If a Scripts folder exists
+scripts/
+
+# Jupyter
+**/.ipynb_checkpoints/
+
+# Python cache
+**/__pycache__/
+*.py[cod]
+
+# VS Code
+.vscode/
+
+# Environment/secrets
+.env
+
+# X-ray datasets and NIH source metadata (not ours to redistribute; see README)
+/data/xray_dataset/
+/data/*.png
+/data/*.jpg
+/data/*.jpeg
+/data/*.zip
+/data/Data_Entry_2017_v2020.csv
+
+# Generated results
+results/
+
+# OS junk
+.DS_Store
+Thumbs.db
