@@ -59,14 +59,15 @@ pip install torch torchvision captum torchxrayvision numpy scipy scikit-image ma
 **Prerequisite:** download and extract the 12 NIH ChestX-ray14 zip archives from [the official source](https://nihcc.app.box.com/v/ChestXray-NIHCC) - no credentialing required. NIH images are not included in this repository (see `.gitignore`) due to size and redistribution terms.
 
 Run notebooks in order:
-1. `00_dataset_sampling.ipynb` — samples a balanced 250-image subset and copies matching files into `data/`
-2. `01_setup.ipynb` — loads the pretrained model, validates predictions on the sampled data
-3. `02_saliency_methods.ipynb` — implements and tests the four saliency methods
-4. `03_baseline_saliency_grid.ipynb` — generates the baseline saliency comparison grid
-5. `04_randomisation_experiment.ipynb` — runs the cascade randomisation sanity check
-6. `05_results_analysis.ipynb` — produces the degradation curves and final analysis
+1. `00_dataset_sampling.ipynb` - samples a balanced 250-image subset and copies matching files into `data/`
+2. `01_setup.ipynb` - loads the pretrained model, validates predictions on the sampled data
+3. `02_saliency_methods.ipynb` - implements and tests the four saliency methods
+4. `03_baseline_saliency_grid.ipynb` - generates the baseline saliency comparison grid
+5. `04_randomisation_experiment.ipynb` - runs the cascade randomisation sanity check
+6. `05_results_analysis.ipynb` - produces the degradation curves and final analysis
 
 ## Project structure
+```
 chest_xray_xai/
 ├── README.md
 ├── results.md
@@ -90,7 +91,7 @@ chest_xray_xai/
 │ ├──degradation_curves_by_pathology.png
 │ ├──degradation_curves_spearman_vs_ssim.png
 │ └──final_depth_distribution.png
-
+```
 
 ## References
 
